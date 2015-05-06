@@ -10,6 +10,25 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
- *= require_self
  */
+  /*// Example using 'Flatly' bootswatch*/
+  /*//Import bootstrap-sprockets*/
+  @import "bootstrap-sprockets";
+
+  /*// Import flatly variables*/
+  @import "bootswatch/flatly/variables";
+
+  /*// Then bootstrap itself*/
+  @import "bootstrap";
+
+  /*// Bootstrap body padding for fixed navbar*/
+  body { padding-top: 60px; }
+
+  /*// And finally bootswatch style itself*/
+  @import "bootswatch/flatly/bootswatch";
+
+  /*// Whatever application styles you have go last*/
+  @import "freelancer";
+
+  @import "font-awesome-sprockets";
+  @import "font-awesome";
