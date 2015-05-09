@@ -50,6 +50,6 @@ Rails.application.configure do
     authentication: "plain",
     enable_starttls_auto: true,
     user_name: 'andoidxx',
-    password: 'D2c478'
+    password: 'D2c47809'
   }
 end
