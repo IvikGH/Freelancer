@@ -14,7 +14,7 @@ class UsersController < ApplicationController
         UserMailer.new_user(user).deliver
         format.html { redirect_to :back }
       else
-        format.html { redirect_to root_path }
+        format.html { redirect_to root_url }
       end
     end
 
