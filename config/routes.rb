@@ -1,8 +1,6 @@
 Rails.application.routes.draw do
 
   post 'users/create'
-  get 'users/new'
-
 
   root 'pages#contact'
   #get 'pages/contact'
