@@ -12,7 +12,7 @@ class UsersController < ApplicationController
     respond_to do |format|
       if user.save
         UserMailer.new_user(user).deliver
-        format.html { redirect_to :back }
+        format.html { redirect_to root_url }
       else
         format.html { redirect_to root_url }
       end
